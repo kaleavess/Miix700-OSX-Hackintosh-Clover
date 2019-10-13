@@ -75,7 +75,7 @@
 
 5. <u>English verison of this document.</u>
 
-## 许多内容都修改自小米Air 12.5的EFI， [github仓库地址](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5)
+## 许多内容都参考自小米Air 12.5的EFI， [github仓库地址](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5)
 
 ****
 
