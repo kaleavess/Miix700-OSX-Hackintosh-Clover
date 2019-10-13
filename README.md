@@ -75,9 +75,8 @@
 
 5. <u>English verison of this document.</u>
 
-## 许多内容都参考自小米Air 12.5的EFI， [github仓库地址](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5)
+## 许多内容都参考自小米Air 12.5的EFI， [github仓库地址](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5),感谢[@johnnync13](https://github.com/johnnync13)  
 
-****
 
 ## DSDT的修改
 
@@ -97,7 +96,7 @@
 
 这个可能比较复杂，在此之前请保证电池补丁可以正常工作，再对DSDT进行进一步的修改。  
 
-方法在在VoodooI2C的gitter聊天室中找到的，由@blankmac 提出  
+方法在在VoodooI2C的gitter聊天室中找到的，由[@blankmac](https://github.com/blankmac) 提出  
 
 直接看聊天聊天记录就可以，至于前面的 **XCRS** 更名可以无视，从后面给出的 **I2C1**与**TSC2**操作就可以。
 
