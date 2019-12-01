@@ -11,7 +11,7 @@
 | 声卡     | ALC236                                   |
 | 屏幕     | 12英寸 2160x1440                           |
 | 硬盘     | 128GB SATA m.2 SSD                       |
-| 网卡&蓝牙  | Intel Wireless 8260AC （替换联想版本BCM94350ZAE无法驱动WIFI，DW1820A用08PKF4版本可以，但是睡眠后死机） |
+| 网卡&蓝牙  | DELL DW1820A 096JNT(`1028:0022`,`BCM94350ZAE`一切正常) （替换联想版本BCM94350ZAE无法驱动WIFI，DW1820A用08PKF4版本睡眠后死机） |
 
 ## 正常工作
 
@@ -55,20 +55,15 @@
 
 8. 休眠唤醒后键盘有一定几率失灵,重新插拔键盘可以解决  
 
-## Todo
+## 关于网卡
 
-1.   * 尝试了 `0VW3T3` 的DW1820A,ID`1028:0021`,反面是`BCM94356ZEPA50DX_2`,无法驱动WIFI
-     * 尝试 `08PKF4` 的DW1820A,可以驱动WIFI和BT，但是合盖睡眠后100%死机
-     * 尝试 `00JT493` 的联想版BCM94350ZAE，无法驱动WIFI
-     * 使用五个针脚屏蔽的方式无法找到PCI设备，请不要屏蔽5根针脚
+#### 已经成功上车DW1820A  
+* 尝试了 `0VW3T3` 的DW1820A,ID`1028:0021`,反面是`BCM94356ZEPA50DX_2`,无法驱动WIFI
+*  尝试 `08PKF4` 的DW1820A,可以驱动WIFI和BT，但是合盖睡眠后100%死机
+*  尝试 `00JT493` 的联想版BCM94350ZAE，无法驱动WIFI
+* 使用五个针脚屏蔽的方式无法找到PCI设备，请不要屏蔽5根针脚
+ *  **使用`096JNT`版本的`DW1820A`,`1028:0022`,`BCM94350ZAE`，没有屏蔽针脚完美驱动，需要的朋友请购买该版本。**
 
-2. I2C与触摸屏Hotpatch
-
-3. 电池Hotpatch
-
-4. 其他完善
-
-5. <u>English verison of this document.</u>
 
 ## 许多内容都参考自小米Air 12.5的EFI， [github仓库地址](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5),感谢[@johnnync13](https://github.com/johnnync13)  
 
